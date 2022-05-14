@@ -1,0 +1,398 @@
+body {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #f5f5f5;
+  line-height: 1.8;
+  color: #333;
+  font-size: 14px;
+  font-family: "游ゴシック体", Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+// フォントサイズ調整
+.f-lg {
+  font-size: 1.3rem;
+}
+
+// フォントファミリー調整
+.f-minc {
+  font-family: "凸版文久見出し明朝";
+}
+
+// 文字間隔調整
+.ls50 {
+  letter-spacing: .05rem;
+}
+
+// 余白
+.mt50 {
+  margin-top: 50px;
+}
+
+// 文字色調整
+.purple {
+  color: #e139ff;
+}
+
+.redpink {
+  color: #ff2176;
+}
+
+// 共通パーツ
+// 全体幅・見出し・コンテンツ先頭写真・文章・CTA・ボタン
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.ly_heading {
+  background-color: #ffe0e0;
+  padding: 12px 10px;
+  margin-bottom: 30px;
+}
+
+.el_heading {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.bl_content_img {
+  position: relative;
+  display: flex;
+  max-width: 50%;
+  height: auto;
+  // object-fit: cover;
+}
+
+.el_content_img_text {
+  position: absolute;
+  bottom: -18px;
+  right: -170px;
+  // font-size: 0.5rem;
+  color: #fff;
+  transform: scale(0.8);
+  // transform-origin: left top;
+}
+
+.ly_content-text {
+  margin-top: 30px;
+}
+
+.el_content-text {
+  font-weight: bold;
+  letter-spacing: .05rem;
+  margin-bottom: 0;
+}
+
+.bl_cta {
+  margin: 40px 0;
+  padding: 30px 0;
+  background-image: linear-gradient(to right, #b534a7 0%, #ff2176 100%);
+}
+
+.el_cta-text {
+  text-align: center;
+  color: #fff;
+}
+
+.ly_btn {
+  margin: 20px 0;
+}
+
+.bl_btn {
+  display: block;
+  background-color: #18d000;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+  padding: 23px 0;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #18d000;
+  // font-weight: bold;
+  letter-spacing: .05rem;
+  transition: .3s;
+
+  &:hover {
+    background-color: #fff;
+    border: 2px solid #18d000;
+    color: #18d000;
+    transition: .3s;
+  }
+}
+
+.global-container {
+  max-width: 480pc;
+  margin: 0 auto;
+}
+
+
+// header
+.header {}
+
+.ly_header_text {
+  background-image: linear-gradient(to right, #b534a7 0%, #ff2176 100%);
+  padding: 5px 35px;
+}
+
+.el_header_text {
+  color: #fff;
+  text-align: center;
+}
+
+.bl_header_content {
+  position: relative;
+  // margin-top: 10px;
+}
+
+.el_header_content {
+
+  &-text1,
+  &-text2 {
+    color: #ff2176;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #811170;
+  }
+
+  &-text1 {
+    padding: 0 5px;
+    background: linear-gradient(180deg, transparent 0%, transparent 60%, #fff 50%, #fff 100%);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    z-index: 200;
+  }
+
+  &-text2 {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    position: absolute;
+    background: linear-gradient(180deg, transparent 0%, transparent 60%, #fff 50%, #fff 100%);
+    bottom: 10px;
+    right: 12px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: -15px;
+      background-color: #fff;
+      height: 12px;
+      width: 15px;
+    }
+  }
+}
+
+.bl_date {
+  display: flex;
+  justify-content: right;
+}
+
+.el_date {
+  &_icon {
+    width: 14px;
+    fill: #707070;
+    align-items: center;
+  }
+
+  &_text {
+    color: #707070;
+    margin: 0;
+    padding: 10px 0 10px 10px;
+  }
+
+}
+
+.ly_main-title {
+  margin-top: 30px;
+  background-color: #ffe0e0;
+  padding: 20px 0;
+}
+
+.el_main-title-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+// content-first
+.content-first {}
+
+.ly_content-text-worries {
+  padding: 30px 0px 35px 0px;
+  background-color: #e9ffdb;
+  border: 2px solid #FF1C1C;
+  border-radius: 10px;
+}
+
+.ly_content-text-points {
+  padding: 30px 0px;
+  background-color: #FFFBD9;
+  border: 2px solid #FF1C1C;
+  border-radius: 10px;
+}
+
+.el_content-text-ul {
+  margin-bottom: 0;
+  list-style: disc;
+}
+
+// content-second
+.el_content-text-ul-howto {
+  margin-bottom: 0;
+  list-style: decimal;
+}
+
+// hotel
+.bl_hotel_content {
+  margin-top: 20px;
+  position: relative;
+}
+
+.ly_hotel-text {
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+
+.el_hotel_text {
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+  color: #fff;
+}
+
+// content-third
+.content-third {
+  margin-top: 60px;
+}
+
+.ly_content-text-advice {
+  position: relative;
+  background-color: #e9ffdb;
+  border: 2px solid #ffbf2f;
+  border-radius: 10px;
+  padding: 34px 15px 30px;
+}
+
+.content-text-label {
+  position: absolute;
+  top: -14px;
+  left: 10px;
+  background-color: #F52FA9;
+  color: #fff;
+  padding: 2px 15px;
+  border-radius: 20px;
+}
+
+// app
+.bl_app {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.bl_app-header {
+  background-image: linear-gradient(to right, #b534a7 0%, #ff2176 100%);
+  display: flex;
+  padding: 8px 7px;
+}
+
+.el_app-num {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  padding: 0px 0 0px 6px;
+  border-radius: 50%;
+  color: #811170;
+  margin-right: 8px;
+  margin-bottom: 0;
+}
+
+.el_app-heading {
+  color: #fff;
+}
+
+.bl_app {
+  &-item {
+    padding: 20px 5px 10px 15px;
+    display: flex;
+    background-color: #f5f5f5;
+  }
+
+  &-img {
+    margin-right: 8px;
+    width: 70px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .3);
+  }
+
+  &-info {
+    margin-left: 8px;
+    transform: scale(0.8);
+    transform-origin: left top;
+  }
+
+  &-desc {
+    margin-top: 40px;
+    padding: 15px 17px;
+    background-color: #ffe0e0;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .3);
+
+    &-ul {
+      font-weight: bold;
+      margin-top: 20px;
+      padding-left: 0;
+    }
+  }
+}
+
+.el_app {
+  &-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+  &-tag {
+    color: #00a7ff;
+  }
+
+  &-star {
+    color: #ffbf2f;
+  }
+
+  &-title {
+    margin-bottom: 0;
+  }
+
+  &-desc {
+    &-heading {
+      font-weight: bold;
+      text-align: center;
+      color: #FF0000;
+      padding: 11px 0;
+      border-top: 2px solid #FF0000;
+      border-bottom: 2px solid #FF0000;
+    }
+  }
+}
+
+.ly_app-register{
+  margin: 30px 0;
+  font-weight: bold;
+  text-align: center;
+}
