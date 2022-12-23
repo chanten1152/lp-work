@@ -186,10 +186,6 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
-}
-
 .f-lg {
   font-size: 1.3rem;
 }
@@ -367,23 +363,60 @@ ul {
   transition: .3s;
 }
 
-.footer {
-  margin-top: 70px;
-  background-color: #3E3E3E;
-  padding: 10px 0;
-  text-align: center;
-  color: #fff;
+.install-step {
+  width: 100%;
+  margin-bottom: 60px;
 }
 
-.footer_text {
+.live-video {
+  position: relative;
+}
+
+.live-video__img {
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.live-video__img-bg {
+  position: absolute;
+  bottom: -20%;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  z-index: -1;
+}
+
+.download {
+  position: relative;
+}
+
+.download__title {
+  padding-top: 40px;
   margin-bottom: 0;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+
+.download__img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.download__img-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 .ly_content-text-advice {
+  margin: 60px auto 50px;
   position: relative;
   background-color: #e9ffdb;
   border: 2px solid #ffbf2f;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 34px 15px 30px;
 }
 
@@ -400,6 +433,18 @@ ul {
 .el_content-text {
   font-weight: bold;
   letter-spacing: .05rem;
+  margin-bottom: 50px;
+}
+
+.footer {
+  margin-top: 70px;
+  background-color: #3E3E3E;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer_text {
   margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
