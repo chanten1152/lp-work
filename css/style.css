@@ -220,6 +220,7 @@ a {
 }
 
 .title {
+  margin: 50px auto !important;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
@@ -229,6 +230,25 @@ a {
 
 .text {
   font-weight: 600;
+}
+
+.text__warning {
+  color: red;
+}
+
+.middle {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.large {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.big-large {
+  font-size: 28px;
+  margin-bottom: 40px;
 }
 
 .header__img {
@@ -291,6 +311,19 @@ a {
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
   z-index: -1;
+}
+
+.introduce {
+  position: absolute;
+  padding: 20px 15px;
+  bottom: 12%;
+  left: 0%;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  color: #ff0000;
+  background-color: #FFF4CB;
+  border-radius: 20px;
 }
 
 .cta {
@@ -363,6 +396,10 @@ a {
   transition: .3s;
 }
 
+.reccomend {
+  margin-bottom: 30px;
+}
+
 .install-step {
   width: 100%;
   margin-bottom: 60px;
@@ -409,6 +446,10 @@ a {
   top: 0;
   width: 100%;
   z-index: -1;
+}
+
+.onepoint {
+  margin-bottom: 100px;
 }
 
 .ly_content-text-advice {
